@@ -33,7 +33,7 @@ int insertSort(int grade[], string name[], int n) {
         }
 
         //When encounter a value before the key value which is greater than the key value,
-        //the program will jump out the while loop and position the key value at the position of the
+        //the program will jump out the while loop and place the key value at the position of the
         //value it encountered.
         grade[k + 1] = keyG;
         name[k + 1] = keyN;
