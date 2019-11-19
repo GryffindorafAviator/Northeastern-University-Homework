@@ -1,5 +1,3 @@
-//Ruiyue Wang NUID 001089745
-
 #include <iostream>
 #include <cmath>
 #include <random>
@@ -174,7 +172,6 @@ int max(int a[], int size) {
 
     return maximum;
 }
-
 
 //Definition of choosing the minimum number in an array function.
 int min(int a[], int size) {
