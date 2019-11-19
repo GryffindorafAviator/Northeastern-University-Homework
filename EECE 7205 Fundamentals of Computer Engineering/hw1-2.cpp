@@ -1,5 +1,3 @@
-//Ruiyue Wang NUID 001089745
-
 # include <iostream>
 using namespace std;
 
