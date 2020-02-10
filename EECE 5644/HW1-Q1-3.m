@@ -2,11 +2,17 @@ close all,
 
 % Generate n-dimensional data vectors from 2 Gaussian pdfs
 n = 2; 
-N1 = 6358; mu1 = -1*ones(n,1); A1 = 3*(rand(n,n)-0.5); %S1 = A*A';
-N2 = 3642; mu2 = 1*ones(n,1); A2 = 2*(rand(n,n)-0.5);
+N1 = 8005; mu1 = [-0.1 0]; A1 = 3*(rand(n,n)-0.5); %S1 = A*A';
+N2 = 1995; mu2 = [0.1 0]; A2 = 2*(rand(n,n)-0.5);
 N = N1 + N2;
+sigma1 = [1 -0.9;-0.9 1];
+sigma2 = [1 0.9;0.9 1];
+R1 = chol(sigma1);
+R2 = chol(sigma2);
+z = repmat(mu,10,1) + randn(10,n)*R1;
 x1 = A1*randn(n,N1)+mu1*ones(1,N1);
 x2 = A2*randn(n,N2)+mu2*ones(1,N2);
+
 
 % Estimate mean vectors and covariance matrices from samples
 mu1hat = mean(x1,2); S1hat = cov(x1');
