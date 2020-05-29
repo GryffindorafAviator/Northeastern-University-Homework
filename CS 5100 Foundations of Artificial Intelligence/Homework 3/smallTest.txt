@@ -1,0 +1,14 @@
+1	1	amazing exciting movie hurrah	4
+2	2	just amazing not sure how else to describe it	4
+3	3	a good time is guaranteed for everyone	4
+4	4	pretty good but not for everyone	3
+5	5	pretty clear this is not for everyone	2
+6	6	pretty thoroughly average movie	2
+7	7	not sure why this movie was made	1
+8	8	this movie should never have been made	0
+9	9	it is amazing how bad this movie is	0
+---
+just amazing
+not amazing
+not for everyone
+ugh
